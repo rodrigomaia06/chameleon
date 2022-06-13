@@ -157,8 +157,8 @@ if response == "E" or  response == "e":
     
     print("Encrypted Message: ", *encrypted_message, sep = "")
         
-
 elif response == "D" or response == "d":
-    print("Option still not available.")
-    exit
+    encrypted_message_raw = input("Encrypted Message: ")
+    for i in range(0, len(encrypted_message_raw)):
+        encrypted_message.append(encrypted_message_raw[i])
 
