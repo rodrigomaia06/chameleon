@@ -161,4 +161,20 @@ elif response == "D" or response == "d":
     encrypted_message_raw = input("Encrypted Message: ")
     for i in range(0, len(encrypted_message_raw)):
         encrypted_message.append(encrypted_message_raw[i])
+    
+    for k in encrypted_message:
+        #w = cipher_ready_deck.index(letterdict[k][1])
+        #x = cipher_ready_deck.index(letterdict[k][1]) + 1
+        #y = blackdict[cipher_ready_deck[x]][1]
+        #z = cipher_ready_deck.index(y) + 1
+        if k == " ":
+            decryped_message.append(k)
+            continue
+        else:
+            w = cipher_ready_deck.index(letterdict[k][1])
+            decryped_message.append(blackdict[cipher_ready_deck[cipher_ready_deck.index(blackdict[cipher_ready_deck[cipher_ready_deck.index(letterdict[k][1]) + 1]][1]) + 1]][0])
+            cipher_ready_deck[w], cipher_ready_deck[0] = cipher_ready_deck[0], cipher_ready_deck[w]
+            cipher_ready_deck.rotate(-2)
+
+    print("Decrypted Message: ", *decryped_message, sep = "")
 
