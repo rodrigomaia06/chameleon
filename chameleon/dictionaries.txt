@@ -70,7 +70,7 @@ reddict= {
     "Nine_Hearts-RED": ("I", "Nine_Spades-BLACK"),
     "Ten_Hearts-RED": ("J", "Ten_Spades-BLACK"),
     "Jack_Hearts-RED": ("K", "Jack_Spades-BLACK"),
-    "Queen_Hearts-RED": ("K", "Jack_Spades-BLACK"),
+    "Queen_Hearts-RED": ("L", "Queen_Spades-BLACK"),
     "King_Hearts-RED": ("M", "King_Spades-BLACK"),
 
     "Ace_Diamonds-RED": ("N", "Ace_Clubs-BLACK"),
